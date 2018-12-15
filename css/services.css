@@ -1,0 +1,557 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+.green111:before {
+    content: "";
+    background-color:  #7beec7;
+    width: 68px;
+    height: 21px;
+    position: absolute;
+    z-index: -1;
+}
+
+/*menu*/
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-decoration: none;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+	text-decoration: none;
+	color: red;
+	opacity: 0.5;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: #3e8e41;
+}
+
+.containerMenu {
+    cursor: pointer;
+}
+
+.containerMenu:hover {
+	opacity: 0.4;
+}
+
+.bar1 {
+    width: 31px;
+    height: 2px;
+    background-color: rgba(96, 96, 110, 0.5);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.bar2 {
+    width: 15px;
+    height: 2px;
+    background-color: rgba(96, 96, 110, 0.5);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.bar3 {
+    width: 23px;
+    height: 2px;
+    background-color: rgba(96, 96, 110, 0.5);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+/**/
+
+.ba-header__logoMenu {
+	padding-top: 40px;
+}
+
+.ba-header__akad {
+	font-family: Montserrat;
+	color:  rgba(96, 96, 110, 0.5);
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 48px;
+}
+
+.header {
+	height: 500px;
+	background: url(../img/top.jpg) 50% / cover;
+}
+
+.ourServices h1 {
+	font-family: Montserrat;
+	color:  rgba(96, 96, 110, 0.5);
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 48px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 155px;
+}
+
+.ourServices p {
+	font-family: Montserrat;
+	color:  rgba(96, 96, 110, 0.5);
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 48px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.whatWeDo h1 {
+	font-family: Montserrat;
+	color:  rgba(96, 96, 110, 0.5);
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 48px;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 150px;
+}
+
+.whatWeDo p {
+	font-family: Open Sans;
+	color:  rgba(96, 96, 110, 0.5);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+}
+
+.man img {
+	width: 100%;
+}
+
+.textMan {
+	padding-top: 100px;
+}  
+
+.textMan p {
+	font-family: Open Sans;
+	color:  rgba(96, 96, 110, 0.5);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+
+
+/* The greenCheck */
+.greenCheck {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    cursor: pointer;
+   font-family: Open Sans;
+	color:  rgba(96, 96, 110, 0.5);
+	font-size: 14px;
+	font-weight: 400;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.greenCheck input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #7beec7;
+}
+
+/* On mouse-over, add a grey background color */
+.greenCheck:hover input ~ .checkmark {
+    color: red;
+	opacity: 0.5;
+}
+
+/* When the checkbox is checked, add a blue background */
+.greenCheck input:checked ~ .checkmark {
+    background-color: #7beec7;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.greenCheck input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.greenCheck .checkmark:after {
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.pulse, .infinite, .lamp, .controls {
+	height: 45px;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+
+.pulseImg {
+	padding-top: 150px;
+	text-align: center;
+}
+
+.pulseImg h1 {
+	font-family: Montserrat;
+	color:  rgba(96, 96, 110, 0.5);
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 30px;
+}
+
+.pulseImg p {
+	font-family: Open Sans;
+	color:  rgba(96, 96, 110, 0.5);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+.plans {
+	padding-top: 150px;
+}
+
+.pricingPlans h1 {
+	font-family: Montserrat;
+	color:  rgba(96, 96, 110, 0.5);
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 48px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.pricingPlans p {
+	font-family: Open Sans;
+	color:  rgba(96, 96, 110, 0.5);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+}
+
+.paid h1 {
+	font-family: Montserrat;
+	color:  rgba(96, 96, 110, 0.5);
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 48px;
+	padding: 30px 0 0 30px;
+}
+
+.dollar {
+	font-family: Montserrat;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 28px;
+	text-align: center;
+	background-color:  #7beec7;
+	width: 165px;
+	height: 30px;
+	margin-bottom: 50px;
+	margin-left: 30px;
+}
+
+.paid button {
+	background-color:  #7beec7;
+	width: 135px;
+	height: 50px;
+	border: none;
+	font-family: Montserrat;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 36px;
+	text-align: center;
+	margin: 50px 0 40px 30px;
+	cursor: pointer;
+}
+
+.borderTop {
+	border-top: 5px solid #7beec7;
+	padding: 0 10px 0 0;
+}
+
+.borderTop:hover {
+	box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25);
+}
+
+.triangle {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 15px 15px 0;
+	border-color: transparent #7beec8 transparent transparent;
+	position: absolute;
+	top: 0px;
+	right: 15px;
+}
+
+.paid {
+	padding: 100px 0 150px 0;
+}
+
+.paidLeft {
+	margin-left: 30px;
+}
+
+.ba-form {
+	background-color: #7beec7;
+}
+
+.ba-form__right {
+	background-color: #fff;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.ba-form__right h1 {
+	font-family: Montserrat;
+	color:  #60606e;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 36px;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.ba-form__right p {
+	font-family: Open Sans;
+	color:  #999999;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-left: 10px;
+}
+
+.input-email {
+	border-style: solid;
+	border-width: 1px;
+	border-color:  #cdcdcd;;
+	box-sizing: border-box;
+	background-color:  #ffffff;
+	height: 50px;
+	font-family: Montserrat;
+	color:  #cdcdcd;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 48px;
+}
+
+.input-send {
+	background-color:  #7beec7;
+	height: 50px;
+	font-family: Montserrat;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 48px;
+	border: 1px solid #7beec7;
+	cursor: pointer;
+	margin-bottom: 15px;
+}
+
+.ba-left {
+	height: 230px;
+	margin-top: 50px;
+}
+
+.ba-left h1 {
+	font-family: Montserrat;
+	color:  #ffffff;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 48px;
+	text-align: left;
+}
+
+.ba-left button {
+	background-color:  #ffffff;
+	height: 49px;
+	border: none;
+	font-family: Montserrat;
+	color:  #7beec7;
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+	cursor: pointer;
+}
+
+.ba-footer {
+	padding: 50px 0 50px;
+}
+
+.bottom-menu > li > a {
+	text-decoration: none;
+	font-family: Open Sans;
+	color:  #9a9a9a;
+	font-size: 14px; 
+	font-weight: 400;
+}
+
+.ba-footer__text {
+	font-family: Open Sans;
+	color:  #9a9a9a;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: right;
+}
+
+.bottom-menu li {
+	display: inline;
+    margin-right: 30px;
+}
+
+.bottom-menu li:last-child {
+	margin-right: 0px;
+}
+
+.logo {
+	color: #9a9a9a;
+	height: 15px;
+	width: 15px;
+	margin-left: 15px;
+}
+
+/*hover*/
+
+.input-send:hover {
+	border: 1px solid red;
+	background-color: red;
+	opacity: 0.5;
+}
+
+.bottom-menu > li > a:hover {
+	color: red;
+	opacity: 0.5;
+}
+
+.thumbnail:hover {
+	background-color: red;
+	opacity: 0.5;
+}
+
+@media (max-width: 1200px) {
+	.bottom-menu li {
+		margin-right: 10px;
+	}
+}
+
+
+@media (max-width: 992px) {
+	.paidLeft {
+	margin-left: 10px;
+	}
+
+	.paid button {
+		margin-left: 10px;
+		width: 94%;
+	}
+
+	.dollar {
+	width: 94%;
+	height: 30px;
+	margin-left: 10px;
+	}
+
+	.paid h1 {
+	padding: 30px 0 0 10px;
+	}
+
+	.bottom-menu, .ba-footer__text {
+		text-align: center;
+	}
+
+	.logo:first-child {
+		margin-left: 0px;
+	}
+
+	.ba-footer__social {
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 768px) {
+	.paid button {
+		width: 98%;
+	}
+
+	.dollar {
+	width: 98%;
+	}
+
+	.paid h1 {
+	text-align: center;
+	}
+}
+
+@media (max-width: 576px) {
+	.textMan p {
+		padding: 0 10px 0 10px;
+	}
+
+	.greenCheck {
+		margin-left: 10px;
+	}
+
+
+}

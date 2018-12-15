@@ -1,0 +1,454 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+/*menu*/
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-decoration: none;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+	text-decoration: none;
+	color: red;
+	opacity: 0.5;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: #3e8e41;
+}
+
+.containerMenu {
+    cursor: pointer;
+}
+
+.containerMenu:hover {
+	opacity: 0.4;
+}
+
+.bar1 {
+    width: 31px;
+    height: 2px;
+    background-color: rgba(96, 96, 110, 0.5);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.bar2 {
+    width: 15px;
+    height: 2px;
+    background-color: rgba(96, 96, 110, 0.5);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.bar3 {
+    width: 23px;
+    height: 2px;
+    background-color: rgba(96, 96, 110, 0.5);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+/**/
+
+.ba-header__logoMenu {
+	padding-top: 40px;
+}
+
+.ba-header__akad {
+	font-family: Montserrat;
+	color:  rgba(96, 96, 110, 0.5);
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 48px;
+}
+
+.header {
+	height: 500px;
+	background: url(../img/top.jpg) 50% / cover;
+}
+
+.ourServices h1 {
+	font-family: Montserrat;
+	color:  rgba(96, 96, 110, 0.5);
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 48px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 155px;
+}
+
+.ourServices p {
+	font-family: Montserrat;
+	color:  rgba(96, 96, 110, 0.5);
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 48px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.object {
+	width: 95%;
+	height: 49px;
+	border-style: solid;
+	border-width: 1px;
+	border-color:  #cccccc;
+	box-sizing: border-box;
+	background-color:  #fefcf9;
+	font-family: Montserrat;
+	color:  #cccccc;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 48px;
+	padding-left: 20px;
+	margin-top: 30px;
+	text-transform: uppercase;
+}
+
+.message {
+	width: 95%;
+	border-style: solid;
+	border-width: 1px;
+	border-color:  #cccccc;
+	box-sizing: border-box;
+	background-color:  #fefcf9;
+	height: 200px;
+	font-family: Montserrat;
+	color:  #cccccc;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 48px;
+	padding-left: 20px;
+	margin-top: 30px;
+	text-transform: uppercase;
+}
+
+.name {
+	border-style: solid;
+	border-width: 1px;
+	border-color:  #cccccc;
+	box-sizing: border-box;
+	background-color:  #fefcf9;
+	width: 90%;
+	height: 49px;
+	font-family: Montserrat;
+	color:  #cccccc;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 48px;
+	padding-left: 20px;
+	margin-top: 150px;
+	text-transform: uppercase;
+}
+
+.email {
+	border-style: solid;
+	border-width: 1px;
+	border-color:  #cccccc;
+	box-sizing: border-box;
+	background-color:  #fefcf9;
+	width: 90%;
+	height: 49px;
+	font-family: Montserrat;
+	color:  #cccccc;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 48px;
+	padding-left: 20px;
+	margin-top: 150px;
+	text-transform: uppercase;
+}
+
+.send {
+	background-color:  #7beec7;
+	width: 165px;
+	height: 50px;
+	font-family: Montserrat;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 48px;
+	text-align: center;
+	border: none;
+	margin-top: 30px;
+}
+
+.logo {
+	color: #9a9a9a;
+	height: 15px;
+	width: 15px;
+	margin-right: 15px;
+}
+
+.contactInfo {
+	font-family: Montserrat;
+	color:  rgba(96, 96, 110, 0.5);
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 48px;
+	padding-top: 100px;
+}
+
+.upperText {
+	font-family: Open Sans;
+	color:  #999999;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 30px; 
+	padding-right: 20px;
+}
+
+.bottomText {
+	font-family: Open Sans;
+	color:  #999999;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+.ba-form {
+	background-color: #7beec7;
+	margin-top: 150px;
+}
+
+.ba-form__right {
+	background-color: #fff;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.ba-form__right h1 {
+	font-family: Montserrat;
+	color:  #60606e;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 36px;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.ba-form__right p {
+	font-family: Open Sans;
+	color:  #999999;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-left: 10px;
+}
+
+.input-email {
+	border-style: solid;
+	border-width: 1px;
+	border-color:  #cdcdcd;;
+	box-sizing: border-box;
+	background-color:  #ffffff;
+	height: 50px;
+	font-family: Montserrat;
+	color:  #cdcdcd;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 48px;
+}
+
+.input-send {
+	background-color:  #7beec7;
+	height: 50px;
+	font-family: Montserrat;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 48px;
+	border: 1px solid #7beec7;
+	cursor: pointer;
+	margin-bottom: 15px;
+}
+
+.ba-left {
+	height: 230px;
+	margin-top: 50px;
+}
+
+.ba-left h1 {
+	font-family: Montserrat;
+	color:  #ffffff;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 48px;
+	text-align: left;
+}
+
+.ba-left button {
+	background-color:  #ffffff;
+	height: 49px;
+	border: none;
+	font-family: Montserrat;
+	color:  #7beec7;
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+	cursor: pointer;
+}
+
+.ba-footer {
+	padding: 50px 0 50px;
+}
+
+.bottom-menu > li > a {
+	text-decoration: none;
+	font-family: Open Sans;
+	color:  #9a9a9a;
+	font-size: 14px; 
+	font-weight: 400;
+}
+
+.ba-footer__text {
+	font-family: Open Sans;
+	color:  #9a9a9a;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: right;
+}
+
+.bottom-menu li {
+	display: inline;
+    margin-right: 30px;
+}
+
+.bottom-menu li:last-child {
+	margin-right: 0px;
+}
+
+.logoBottom {
+	color: #9a9a9a;
+	height: 15px;
+	width: 15px;
+	margin-left: 15px;
+}
+
+#map {
+    height: 85%;
+    margin-top: 150px;
+}
+
+.send:hover {
+	background-color: red;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.thumbnail:hover {
+	background-color: red;
+	opacity: 0.5;
+}
+
+.menu__category li:hover {
+	color: red;
+	opacity: 0.5;
+}
+
+.input-send:hover {
+	border: 1px solid red;
+	background-color: red;
+	opacity: 0.5;
+}
+
+.bottom-menu > li > a:hover {
+	color: red;
+	opacity: 0.5;
+}
+
+@media (max-width: 1200px) {
+	.bottom-menu li {
+		margin-right: 10px;
+	}
+}
+
+@media (max-width: 992px) {
+	.bottom-menu, .ba-footer__text {
+		text-align: center;
+	}
+
+	.logo:first-child {
+		margin-left: 0px;
+	}
+
+	.ba-footer__social {
+		margin: 0 auto;
+	}
+
+	.message, .object {
+		width: 90%;
+	}
+
+	.email {
+		margin-top: 30px;
+	}
+}
+
+@media (max-width: 768px) {
+	.name {
+		margin-top: 30px;
+	}
+
+	.message, .object, .email, .name {
+		width: 95%;
+	}
+
+	.send {
+		width: 95%;
+	}
+
+	.center2 {
+		width: 95%;
+	}
+
+	#map {
+	    height: 450px;
+	    margin-top: 50px;
+	}
+
+	.mainText, .ba-footer__social {
+		text-align: center;
+	}
+
+	.center {
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.ba-footer__socialTop {
+		margin: 0 auto;
+	}
+}
